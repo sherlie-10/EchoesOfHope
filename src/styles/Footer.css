@@ -1,0 +1,77 @@
+/* Footer container */
+footer {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer text style */
+footer p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Social media section */
+.social-media {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  margin: 0 15px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Instagram icon size and hover effect */
+.instagram-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-media a:hover {
+  color: #E1306C; /* Instagram color on hover */
+}
+
+.instagram-icon:hover {
+  transform: scale(1.2); /* Icon scales up on hover */
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+  footer {
+    padding: 30px;
+  }
+
+  .social-media a {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .instagram-icon {
+    width: 26px;
+    height: 26px;
+  }
+}

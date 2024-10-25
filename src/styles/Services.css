@@ -1,0 +1,122 @@
+/* Background Styling for the Services Section */
+#services {
+  background-image: url('../assets/images/backgroundimage.png');
+  background-size: cover;
+  background-color: whitesmoke;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: rgb(19, 18, 18);
+  text-align: center;
+}
+
+/* Service Title Styling */
+#services h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Individual Service Cards */
+.services {
+  background-color: rgba(7, 0, 0, 0.922); /* Adding a transparent background */
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  max-width: 600px;
+  animation: fadeInUp 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Services */
+.services:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Service Title and Description */
+.services h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: slideIn 0.8s ease-out;
+}
+
+.services p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  animation: slideIn 1s ease-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #services h2 {
+    font-size: 2.5rem;
+  }
+
+  .services {
+    padding: 1.5rem;
+  }
+
+  .services h3 {
+    font-size: 1.8rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #services h2 {
+    font-size: 2rem;
+  }
+
+  .services h3 {
+    font-size: 1.5rem;
+  }
+
+  .services p {
+    font-size: 0.9rem;
+  }
+}
+
+#services {
+  background-image: url('../assets/images/backgroundimage.png'); /* Replace with the correct path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Optional: Keeps the image fixed during scrolling */
+  padding: 4rem 2rem; /* Adds padding to the section */
+  color: white; /* Text color to ensure readability */
+  text-align: center;
+}

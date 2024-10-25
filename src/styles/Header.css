@@ -1,0 +1,34 @@
+header {
+  background: rgb(0, 0, 0);
+  border: 26cap;
+  padding: 40px;
+}
+
+
+.logo {
+  color: white;
+  font-size: 30px;
+  
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
